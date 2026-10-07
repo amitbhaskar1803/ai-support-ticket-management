@@ -59,3 +59,24 @@ Client / Postman / Swagger
             |
             v
       TiDB / MySQL
+
+
+Ticket
+   |
+   v
+AI Controller
+   |
+   v
+AI Service
+   |
+   v
+Google Gemini API
+   |
+   v
+AI Analysis
+   |
+   +---- Category
+   +---- Priority
+   +---- Sentiment
+   +---- Summary
+   +---- Suggested Response
