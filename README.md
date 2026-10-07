@@ -80,3 +80,63 @@ AI Analysis
    +---- Sentiment
    +---- Summary
    +---- Suggested Response
+
+
+                        Architecture
+                        -------------
+
+
+                         ┌──────────────────────┐
+                         │      Client          │
+                         │ Postman / Swagger    │
+                         └──────────┬───────────┘
+                                    │
+                                    ▼
+                         ┌──────────────────────┐
+                         │   Spring Security   │
+                         │      JWT Filter      │
+                         └──────────┬───────────┘
+                                    │
+                                    ▼
+                         ┌──────────────────────┐
+                         │     Controllers      │
+                         │                      │
+                         │ AuthController       │
+                         │ TicketController     │
+                         │ AIController         │
+                         └──────────┬───────────┘
+                                    │
+                                    ▼
+                         ┌──────────────────────┐
+                         │       Services       │
+                         │                      │
+                         │ AuthService          │
+                         │ TicketService        │
+                         │ AIService            │
+                         └──────────┬───────────┘
+                                    │
+                         ┌──────────┴───────────┐
+                         │                      │
+                         ▼                      ▼
+                ┌──────────────────┐   ┌──────────────────┐
+                │ TicketRepository │   │  UserRepository  │
+                └────────┬─────────┘   └────────┬─────────┘
+                         │                      │
+                         └──────────┬───────────┘
+                                    ▼
+                         ┌──────────────────────┐
+                         │     TiDB Cloud       │
+                         │   MySQL Compatible   │
+                         └──────────────────────┘
+
+                         AI Flow
+                            │
+                            ▼
+                    ┌──────────────────┐
+                    │  Google Gemini   │
+                    └──────────────────┘
+
+
+
+
+
