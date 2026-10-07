@@ -184,25 +184,14 @@ Containerized the application using Docker and deployed it to Render with TiDB C
 
 
 
-🔮 Future Enhancements
-Potential future improvements:
+## 🔮 Future Enhancements
+
 - Refresh token mechanism
 - Email notifications
-- Ticket assignment to support agents
-- Ticket comments/history
-- Audit logging
-- Redis caching
-- Rate limiting
+- Ticket assignment and comments/history
+- Redis caching and rate limiting
 - Kafka-based event processing
-- File attachments
-- Advanced analytics dashboard
-- AI confidence scoring
-- AI prompt versioning
-- Conversation history
-- Automated ticket categorization
-- Kubernetes deployment
-- CI/CD pipeline
-- Observability with metrics and distributed tracing
-
+- AI confidence scoring and prompt versioning
+- Kubernetes deployment and CI/CD pipeline
 
 
