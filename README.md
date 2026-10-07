@@ -9,10 +9,10 @@ The application uses **Google Gemini** for AI capabilities and **TiDB Cloud** as
 ## 🚀 Live Application
 
 **Backend API:**  
-https://ai-support-ticket-management-6w2v.onrender.com
+[https://ai-support-ticket-management-6w2v.onrender.com](https://ai-support-ticket-management-6w2y.onrender.com/)
 
 **Swagger UI:**  
-https://ai-support-ticket-management-6w2v.onrender.com/swagger-ui/index.html
+[https://ai-support-ticket-management-6w2v.onrender.com/swagger-ui/index.html](https://ai-support-ticket-management-6w2y.onrender.com/swagger-ui/index.html#/)
 
 **Health Check:**  
 https://ai-support-ticket-management-6w2v.onrender.com/actuator/health
