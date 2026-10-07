@@ -8,11 +8,6 @@ The application uses **Google Gemini** for AI capabilities and **TiDB Cloud** as
 
 ## 🚀 Live Application
 
-## 🏗️ Architecture
-
-![System Architecture](docs/architecture.png)
-
-
 **Swagger UI:**  
 [https://ai-support-ticket-management-6w2v.onrender.com/swagger-ui/index.html](https://ai-support-ticket-management-6w2y.onrender.com/swagger-ui/index.html#/)
 
@@ -57,7 +52,26 @@ The system provides APIs for:
 
 The project follows a layered Spring Boot architecture:
 
-```text
+
+Client / Swagger / Postman
+          ↓
+Spring Security + JWT
+          ↓
+Controllers
+   ↓       ↓       ↓
+ Auth    Ticket     AI
+   ↓       ↓       ↓
+Service  Service  Gemini
+          ↓
+      Repository
+          ↓
+       TiDB Cloud
+
+Docker → Render
+
+------------------------------
+
+
 Client / Postman / Swagger
             |
             v
